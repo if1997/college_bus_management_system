@@ -31,9 +31,8 @@ class TSP():
         while n>0:
             self.ga.next()
             distance=self.distance(self.ga.best.gene)
-            if n%100==0:
-                print("{}:{}".format(self.ga.generation,distance))
-                print(self.ga.best.gene)
+            #if n%100==0:
+                #print("{}:{}".format(self.ga.generation,distance))
             n-=1
             
         print("经过%d次迭代，最优解距离为：%f"%(self.ga.generation,distance))
